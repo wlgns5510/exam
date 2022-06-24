@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립</h1>
+	
+	<h2>배열</h2>
+</body>
+<script type="text/javascript">
+
+	var array = [];		 	//배열
+	var guestbookVo = {
+			name: "황일영", 
+			password: "1234", 
+			content: "안녕하세요",
+			showInfo: function(){
+				console.log(name + ", " + password + ", " + content)
+			}
+	};	//객체
+	
+	var name = guestbookVo.name;
+	var password = guestbookVo.password;
+	var content = guestbookVo.content;
+	
+	guestbookVo.showInfo();
+	
+	/////////////////////////////////////////////////////////////////////////
+	
+	var personVo01 = {
+			name: "황일영", 
+			hp: "010-1111-1111", 
+			company: "02-111-1111" 
+	};
+	
+	var personVo02 = {
+			name: "유재석",
+			hp: "010-2222-2222",
+			/* company는 나중에 설정가능 */
+	};
+	
+	console.log("company추가전")
+	console.log(personVo01);
+	console.log(personVo02);
+	
+	personVo02.company = "02-222-2222";	//personVo02의 conpany에 값을 추가
+	
+	console.log("company추가후")
+	console.log(personVo01);
+	console.log(personVo02);
+	
+
+	</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input id ="left" value="" type="text"> + <input id="right" value="" type="text"><br>
+	<button id="btnPlus" type="button">더하기</button>
+	
+	<p id="display">합계</p>
+</body>
+<script type="text/javascript">
+window.onload = function(){
+	
+	var btnPlus = document.getElementById("btnPlus");
+	var left = document.getElementById("left");
+	var right = document.getElementById("right");
+	var display = document.getElementById("display");
+
+	
+	
+	//버튼을 클릭했을때(이벤트)
+	btnPlus.onclick = function(){		
+		console.log("버튼클릭");
+		
+		var leftNo = parseInt(left.value); 		//value에 값을 넣음
+		
+		var rightNo = parseInt(right.value);	//value에 값을 넣음
+		
+		var sum = leftNo + rightNo;
+		
+		display.innerHTML = sum;
+		
+		
+	};
+};
+</script>
+</html>

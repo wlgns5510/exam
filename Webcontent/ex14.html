@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립</h1>
+	
+	<h2>배열</h2>
+</body>
+<script type="text/javascript">
+
+	var array = [];
+	array[0] = 1;
+	array[1] = 2.5;
+	array[2] = "안녕";
+	array[3] = "hello!!";
+	
+	console.log(array[0]);
+	console.log(array[1]);
+	console.log(array[2]);
+	console.log(array[3]);
+	
+	console.log(array);
+	
+	console.log("--------------------------");
+	
+	for(var i=0; i<array.length; i++){
+		var data = array[i];
+		console.log(data)
+	}
+	
+	console.log("--------------------------");
+	
+	var array2 = [273,"문자열", 5>3, plus, function(){return 5+100}, [273, 103]];
+	
+	console.log(array2[0]);
+	console.log(array2[1]);
+	console.log(array2[2]);
+	console.log(array2[3](5, 10));	//가로는 실행을 의미
+	console.log(array2[4]());	//가로는 실행을 의미
+	console.log(array2[5][0]);	//[0]칸의 값
+	console.log(array2[5][1]);	//[1]칸의 값
+	function plus(a, b){
+		var sum = a + b;
+		return sum;
+	}
+</script>
+</html>

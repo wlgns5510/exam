@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<script type="text/javascript" src="./jquery-1.12.4.js"></script>
 </head>
 <body>
 	<h1>자바스크립</h1>
@@ -17,12 +19,26 @@
 <script type="text/javascript">
 window.onload = function(){	//정해져있는 기본폼 'onload' window가 켜졌을때 함수를 실행
 	
-	var testButton = document.getElementById("btn");	//id가 'btn'을 찾아서 정보를 testButton변수에 담아줌
+	//자바스크립트로 이벤트 처리(바닐라)
+	/* var testButton = document.getElementById("btn");	//id가 'btn'을 찾아서 정보를 testButton변수에 담아줌
 	var testArea = document.getElementById("display");	//id가 'display'을 찾아서 정보를 testArea변수 담아줌
 	
 	testButton.onclick = function(){ //정해져있는 기본폼 'onclick' -->클릭시
 		testArea.innerHTML = "<font color='red'>홍길동<font>";	//정해져있는 기본폼 'innerHTML -->글,폰트를 정해줌
-	}
+	} */
+	
+	//jquery 이벤트 처리
+	var testButton = $("#btn");
+	var testArea = $("#display");
+	
+	testButton.on("click", function(){
+		$("#display").html("<font color = 'red'>홍길동<font>");
+	});
+	
+	
+	
+	
+	
 };
 	
 </script>
